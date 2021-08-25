@@ -2125,7 +2125,9 @@ li {
 
 /* when input box is checked, select box; "+" selects the next sibling  */
 .checkbox__input:checked + .footer__right__checkbox {
-  background: center/cover no-repeat url(../images/check.svg);
+  background: center/contain no-repeat url(../images/check.svg);
+  background-color: white;
+  border-color: white;
 }
 
 @media (min-width: 875px) {
