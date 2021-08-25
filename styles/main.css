@@ -179,6 +179,14 @@ li {
   transition: width 0.3s;
 }
 
+.inner__close__icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 140px;
+  cursor: pointer;
+}
+
 @media (min-width: 875px) {
   .sticky__navigation__wrapper {
     background-color: white;

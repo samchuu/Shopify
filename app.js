@@ -1,4 +1,5 @@
 const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".inner__close__icon");
 const sideMenu = document.querySelector(".side__menu");
 const shopCategories = document.querySelector(".show__menu");
 const innerMenu = document.querySelector(".nav__inner__menu");
@@ -43,6 +44,10 @@ function toggleNav() {
     innerMenu.classList.remove("inner__mobile__open");
     // remove scroll when modal is active
     document.querySelector("body").classList.toggle("active");
+  });
+  // close icon for mobiles
+  closeIcon.addEventListener("click", () => {
+    innerMenu.classList.remove("inner__mobile__open");
   });
 }
 
