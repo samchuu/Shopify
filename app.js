@@ -25,10 +25,7 @@ window.addEventListener("scroll", (e) => {
     );
   } else if (window.innerWidth < 1366) {
     categoryWrapper.classList.toggle("categories__show", window.scrollY > 942);
-    koiskiWrapper.classList.toggle(
-      "koiski__wrapper__show",
-      window.scrollY > 2707
-    );
+    koiskiWrapper.style.display = "flex";
   } else if (window.innerWidth > 1367) {
     categoryWrapper.classList.toggle("categories__show", window.scrollY > 1260);
     koiskiWrapper.classList.toggle(
