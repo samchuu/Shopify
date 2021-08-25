@@ -1888,11 +1888,6 @@ li {
             justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    display: none;
-  }
-  .koiski__wrapper__show {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .koiski__image {
@@ -2122,18 +2117,15 @@ li {
   margin-top: 5px;
   position: relative;
   left: 27px;
-}
-
-.footer__right__checkbox::after {
-  content: "\2714";
-  font-size: 10px;
-  color: white;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: background 0.15s, border-color 0.15s;
+  transition: background 0.15s, border-color 0.15s;
 }
 
 /* when input box is checked, select box; "+" selects the next sibling  */
 .checkbox__input:checked + .footer__right__checkbox {
-  background-color: #2266dc;
-  border-color: #2266dc;
+  background: center/cover no-repeat url(../images/check.svg);
 }
 
 @media (min-width: 875px) {

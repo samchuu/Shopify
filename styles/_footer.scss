@@ -80,21 +80,9 @@
   transition: background 0.15s, border-color 0.15s;
 }
 
-.footer__right__checkbox::after {
-  content: "\2714";
-  font-size: 10px;
-  color: white;
-  transform: scale(0);
-  transition: transform 0.15s;
-}
 /* when input box is checked, select box; "+" selects the next sibling  */
 .checkbox__input:checked + .footer__right__checkbox {
-  background: $checkbox;
-  border-color: $checkbox;
-}
-
-.checkbox__input:checked + .footer__right__checkbox::after {
-  transform: scale(1);
+  background: center / cover no-repeat url(../images/check.svg);
 }
 
 @media (min-width: $tablet) {
