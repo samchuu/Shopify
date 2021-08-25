@@ -248,6 +248,10 @@ li {
     width: auto;
     transition: width 0.3s;
   }
+
+  .inner__close__icon {
+    display: none;
+  }
   .navigation {
     display: none;
   }
