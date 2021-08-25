@@ -1,0 +1,308 @@
+.categories__wrapper {
+  width: 100%;
+  max-width: 495px;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  left: 0px;
+  animation: 1.3s slideLeft;
+  display: none;
+}
+@keyframes slideLeft {
+  from {
+    left: -150px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.categories__show {
+  display: block;
+}
+#category__outerwear {
+  background: url(../images/outerwear.png);
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+}
+
+#category__outerwear:hover {
+  background-image: $linear-gradient, url("../images/outerwear.png");
+}
+
+#category__ski {
+  background: url(../images/ski.png);
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+}
+
+#category__ski:hover {
+  background-image: $linear-gradient, url("../images/ski.png");
+}
+
+#category__knitwear {
+  background: url(../images/knitwear.png);
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+}
+
+#category__knitwear:hover {
+  background-image: $linear-gradient, url("../images/knitwear.png");
+}
+
+#category__accessories {
+  background: url(../images/accessories.png);
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+}
+
+#category__accessories:hover {
+  background-image: $linear-gradient, url("../images/accessories.png");
+}
+
+#category__goggles {
+  background: url(../images/goggles.png);
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+}
+
+#category__goggles:hover {
+  background-image: $linear-gradient, url("../images/goggles.png");
+}
+
+#category__jackets {
+  background: url(../images/jackets.png);
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+}
+#category__jackets:hover {
+  background-image: $linear-gradient, url("../images/jackets.png");
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.category h1 {
+  letter-spacing: 1.5px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+
+.category__shop {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  color: white;
+}
+
+.category__question {
+  background: url(../images/question-mark-shop-now.svg);
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 45px;
+  bottom: 15px;
+}
+
+@media (min-width: $tablet) {
+  .categories__wrapper {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    display: grid;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "one two three"
+      "four five six";
+  }
+
+  .categories__show {
+    display: grid;
+  }
+  #category__outerwear {
+    grid-area: one;
+    width: 270px;
+    height: 270px;
+  }
+  #category__ski {
+    grid-area: two;
+    width: 270px;
+    height: 270px;
+  }
+
+  #category__knitwear {
+    grid-area: three;
+    width: 270px;
+    height: 270px;
+  }
+
+  #category__accessories {
+    grid-area: four;
+    width: 270px;
+    height: 270px;
+  }
+
+  #category__goggles {
+    grid-area: five;
+    width: 270px;
+    height: 270px;
+  }
+
+  #category__jackets {
+    grid-area: six;
+    width: 270px;
+    height: 270px;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+  }
+
+  .category h1 {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .category__shop {
+    font-weight: 300;
+    position: relative;
+    right: 10px;
+  }
+
+  .category__question {
+    width: 13px;
+    height: 13px;
+    position: relative;
+    left: 35px;
+    bottom: 14px;
+  }
+
+  .category__line {
+    width: 81px;
+    position: relative;
+    left: -4px;
+    bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .categories__wrapper {
+    width: 86%;
+    max-width: 2120px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 552px 552px;
+    grid-template-areas:
+      "one two three"
+      "four five six";
+    display: none;
+  }
+
+  .categories__show {
+    display: grid;
+  }
+
+  #category__outerwear {
+    grid-area: one;
+    width: 532px;
+    height: 532px;
+    margin-right: 20px;
+  }
+  #category__ski {
+    grid-area: two;
+
+    width: 532px;
+    height: 532px;
+    margin-right: 20px;
+  }
+
+  #category__knitwear {
+    grid-area: three;
+
+    width: 532px;
+    height: 532px;
+  }
+
+  #category__accessories {
+    grid-area: four;
+
+    width: 532px;
+    height: 532px;
+    margin-right: 20px;
+  }
+
+  #category__goggles {
+    grid-area: five;
+
+    width: 532px;
+    height: 532px;
+    margin-right: 20px;
+  }
+
+  #category__jackets {
+    grid-area: six;
+
+    width: 532px;
+    height: 532px;
+  }
+
+  .category {
+    margin: 0px auto;
+  }
+
+  .category h1 {
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+  }
+
+  .category__shop {
+    font-size: 16px;
+    position: relative;
+    right: 10px;
+  }
+
+  .category__question {
+    background: url(../images/question-mark-shop-now.svg);
+    background-size: cover;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    left: 50px;
+    bottom: 17px;
+  }
+
+  .category__line {
+    background: url(../images/shopline.svg);
+    background-size: cover;
+    width: 111px;
+    height: 2px;
+    position: relative;
+    left: -2px;
+    bottom: 10px;
+  }
+}

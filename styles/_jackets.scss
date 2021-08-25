@@ -1,0 +1,312 @@
+.slider__new {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 40px;
+}
+.slider__new__text {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 0;
+  width: 170px;
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+}
+.slider__new__left,
+.slider__new__right {
+  background-color: $green;
+  height: 5px;
+  width: 100%;
+}
+
+/* jacket */
+.jacket__wrapper {
+  width: 90%;
+  max-width: 335px;
+  margin: 5rem auto;
+}
+.jacket {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+#jacket__black {
+  background: url(../images/black.png);
+  width: 276px;
+  height: 336px;
+  margin: 0 auto;
+}
+
+#jacket__white {
+  background: url(../images/white.png);
+  width: 276px;
+  height: 316px;
+  margin: 0 auto;
+}
+
+#jacket__yellow {
+  background: url(../images/yellow.png);
+  position: relative;
+  right: 45px;
+  width: 394px;
+  height: 316px;
+  margin: 0 auto;
+}
+
+#jacket__camo {
+  background: url(../images/camo.png);
+  width: 276px;
+  height: 379px;
+  margin: 0 auto;
+}
+
+.jacket__brand {
+  color: #999999;
+  text-transform: initial;
+}
+
+.jacket__color,
+.jacket__price,
+.jacket__brand,
+.jacket__shop {
+  margin-top: 5px;
+}
+
+.jacket__question,
+.best__seller__question__grey {
+  display: none;
+}
+
+.jacket__line {
+  width: 75px;
+  height: 2px;
+  background-color: $green;
+  margin: 5px auto;
+}
+
+@media (min-width: $tablet) {
+  .slider__new {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 35px;
+  }
+  .slider__new__text {
+    font-size: 16px;
+    left: 8px;
+    position: relative;
+    bottom: 8px;
+  }
+  .slider__new__left {
+    width: 100%;
+    max-width: 881px;
+  }
+  .slider__new__right {
+    width: 100%;
+    max-width: 881px;
+    position: relative;
+    left: 17px;
+  }
+  /* jacket */
+  .jacket__wrapper {
+    max-width: 900px;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .jacket {
+    /* width: 20px; */
+    font-size: 14px;
+    position: relative;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px;
+  }
+
+  .jacket__line {
+    width: 92px;
+    height: 2px;
+    background-color: $green;
+    margin: 5px auto;
+  }
+
+  .jacket__black__description {
+    position: relative;
+    right: 10px;
+  }
+
+  .jacket__white__description {
+    position: relative;
+    top: 15px;
+  }
+
+  .jacket__yellow__description {
+    position: relative;
+    top: 50px;
+    right: 34px;
+  }
+
+  .jacket__camo__description {
+    position: relative;
+    bottom: 13px;
+    right: 24px;
+  }
+
+  #jacket__yellow {
+    position: relative;
+    left: -31px;
+  }
+
+  #jacket__camo {
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider__new {
+    position: relative;
+    top: 5px;
+  }
+  .slider__new__text {
+    width: 220px;
+    font-size: 22px;
+    left: 8px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .slider__new__right {
+    position: relative;
+    left: 17px;
+  }
+  /* jacket */
+  .jacket__wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 5rem auto;
+    position: relative;
+    left: 13px;
+    bottom: 50px;
+  }
+  .jacket {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+  }
+
+  .jacket__color,
+  .jacket__price,
+  .jacket__brand,
+  .jacket__shop {
+    margin-top: 5px;
+  }
+
+  .jacket__question {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+    top: 164px;
+    left: 37px;
+    z-index: 9999;
+  }
+
+  #jacket__left {
+    position: relative;
+    left: 37px;
+  }
+
+  #jacket__right {
+    position: relative;
+    left: -52px;
+  }
+
+  .jacket__black__description {
+    position: relative;
+    right: 32px;
+  }
+
+  .jacket__white__description {
+    position: relative;
+    top: 50px;
+    left: 22px;
+  }
+
+  .jacket__yellow__description {
+    position: relative;
+    top: 50px;
+    left: 18px;
+  }
+
+  .jacket__camo__description {
+    position: relative;
+    bottom: 13px;
+    left: 13px;
+  }
+
+  .jacket__question__grey {
+    background: url(../images/mini-question-grey.svg);
+    width: 20px;
+    height: 20px;
+  }
+
+  #jacket__question__black {
+    position: absolute;
+    right: -17px;
+    bottom: 125px;
+  }
+
+  #jacket__question__white {
+    position: absolute;
+    right: -60px;
+    bottom: 125px;
+  }
+
+  #jacket__question__camo {
+    position: absolute;
+    right: -44px;
+    bottom: 125px;
+  }
+
+  #jacket__question__yellow {
+    background: url(../images/mini-question-green.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1px;
+    bottom: 125px;
+  }
+  #jacket__black {
+    position: relative;
+    right: 13px;
+    margin-bottom: 42px;
+  }
+  #jacket__white {
+    position: relative;
+    left: 31px;
+  }
+
+  #jacket__yellow {
+    position: relative;
+    left: 17px;
+  }
+
+  #jacket__camo {
+    position: relative;
+    left: 2px;
+  }
+
+  .jacket__line {
+    width: 92px;
+    height: 2px;
+    background-color: $green;
+    margin: 5px auto;
+  }
+}

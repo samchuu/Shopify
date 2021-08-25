@@ -1,0 +1,414 @@
+// hide
+.sticky__navigation__wrapper,
+.header__desktop,
+.desktop__navigation__lower ul,
+#mobile__wish,
+#mobile__bag {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+  margin-top: 10px;
+}
+// mobile navbar
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  left: 0px;
+  cursor: pointer;
+  height: 70px;
+}
+.mobile__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+}
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 30px;
+  transition: all 0.7s ease;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+
+//side-menu
+.side__menu {
+  background-color: white;
+  border-right: 2px solid #bbbbbb;
+  transition: 0.8s all ease;
+  height: 100%;
+  position: absolute;
+  width: 205px;
+  top: 0;
+  left: -205px;
+  z-index: 999;
+  padding: 20px;
+}
+.side__menu a {
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.side__menu a:hover {
+  color: grey;
+}
+.open {
+  left: 0px;
+}
+.shift__wrapper {
+  position: relative;
+  transition: all 0.5s ease;
+}
+.shift {
+  margin-left: 190px;
+}
+.search__input {
+  position: relative;
+  top: 5px;
+  bottom: 0px;
+  outline: none;
+  border-bottom: 1px solid black;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 135px;
+  padding-left: 23px;
+}
+.search {
+  width: 11px;
+  top: 30px;
+  left: 25px;
+  position: absolute;
+  z-index: 9999;
+}
+.navigation__mobile__lower a,
+.register__myaccount__wish__cart a {
+  font-size: 12px;
+}
+/* inner menu */
+.nav__inner__menu {
+  transition: all 0.7s ease;
+  text-align: center;
+  padding: 1.5rem;
+  position: absolute;
+  top: -50rem;
+  left: 190px;
+  background: white;
+  z-index: 9999;
+  width: 190px;
+}
+.inner__mobile__open {
+  top: 0;
+}
+.inner__item {
+  margin: 0 auto;
+  list-style: none;
+  font-size: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+.inner__item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: $green;
+  transition: width 0.3s;
+}
+.inner__item:hover:after {
+  width: auto;
+  transition: width 0.3s;
+}
+
+@media (min-width: $tablet) {
+  .sticky__navigation__wrapper {
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: -50rem;
+    z-index: 9999;
+    width: 100%;
+    height: 93px;
+  }
+  .sticky__open {
+    top: 0;
+  }
+  .sticky__navigation {
+    position: relative;
+  }
+  .sticky__navigation__upper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sticky__logo {
+    position: relative;
+    left: 8px;
+    top: 17px;
+  }
+  .sticky__wish__bag {
+    position: relative;
+    left: 669px;
+    top: 37px;
+  }
+  #sticky__bag {
+    position: relative;
+    left: 26px;
+  }
+  .sticky__navigation__lower ul {
+    letter-spacing: 0.7px;
+    font-size: 16px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1254px;
+    margin: 0 auto;
+    position: relative;
+    top: 28px;
+    left: 22px;
+  }
+  .side__menu {
+    left: -205px;
+  }
+  .shift {
+    margin-left: 0px;
+  }
+  .active {
+    overflow-y: scroll;
+  }
+  /* inner menu */
+  .nav__inner__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+    transition: all 0.7s ease;
+    text-align: center;
+    padding: 0rem;
+    position: absolute;
+    top: -50rem;
+    left: 214px;
+    background: white;
+    z-index: 9999;
+    width: 410px;
+    height: 300px;
+  }
+  .left__inner {
+    grid-area: left;
+    margin-top: 24px;
+    position: relative;
+    left: 0px;
+  }
+  .right__inner {
+    grid-area: right;
+    margin-top: 24px;
+    position: relative;
+    right: 10px;
+  }
+  .inner__desktop__open {
+    top: 10rem;
+  }
+  .inner__item {
+    margin: 0 auto;
+    list-style: none;
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    margin-top: 0px;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .inner__item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background: $green;
+    transition: width 0.3s;
+  }
+  .inner__item:hover:after {
+    width: auto;
+    transition: width 0.3s;
+  }
+  .navigation {
+    display: none;
+  }
+  .header__desktop {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    max-width: 1920px;
+  }
+  .desktop__logo {
+    position: relative;
+    right: 36px;
+    width: 285px;
+  }
+  .desktop__search__box {
+    grid-area: search;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 36px;
+    right: 35px;
+  }
+  .desktop__search {
+    width: 20px;
+    height: 20px;
+    z-index: 99;
+  }
+  .desktop__search__input {
+    border: none;
+    width: 214px;
+    position: relative;
+    bottom: 18px;
+    outline: none;
+    padding-left: 25px;
+    font-size: 16px;
+  }
+  .desktop__search__line {
+    width: 214px;
+    margin-top: -10px;
+  }
+  .register__myaccount {
+    display: flex;
+    position: relative;
+    top: 24px;
+    right: 110px;
+  }
+  .wish__bag {
+    position: relative;
+    left: 105px;
+    cursor: pointer;
+  }
+  #desktop__wish {
+    width: 24px;
+    height: 19px;
+    position: relative;
+    right: 21px;
+  }
+  #desktop__bag {
+    width: 23px;
+    height: 28px;
+    position: relative;
+    left: 7px;
+  }
+  .desktop__register__myaccount__wish__cart li {
+    margin-right: 5px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+  }
+  .desktop__navigation__lower ul {
+    letter-spacing: 0.7px;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 90%;
+    max-width: 1254px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+  }
+  .desktop__navigation__lower li,
+  .sticky__navigation__lower li {
+    font-size: 12px;
+    position: relative;
+    bottom: 6px;
+    right: 14px;
+  }
+  #brand {
+    position: relative;
+    right: 5px;
+  }
+  #collection {
+    position: relative;
+    right: 19px;
+  }
+  #about {
+    position: relative;
+    right: 28px;
+  }
+  #pop {
+    position: relative;
+    right: 5px;
+  }
+}
+
+@media (min-width: $desktop) {
+  /* inner menu */
+  .nav__inner__menu {
+    position: absolute;
+    top: -50rem;
+    left: 594px;
+    width: 528px;
+    height: 462px;
+  }
+
+  .left__inner {
+    position: relative;
+    left: 49px;
+    text-align: start;
+  }
+  .right__inner {
+    text-align: start;
+    position: relative;
+    left: 42px;
+  }
+
+  .inner__desktop__open {
+    top: 12.5rem;
+  }
+
+  .inner__item {
+    font-size: 16px;
+    line-height: 35px;
+    text-align: start;
+    display: inline-block;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .desktop__logo {
+    position: relative;
+    right: 28px;
+    width: 500px;
+  }
+
+  .register__myaccount {
+    position: relative;
+    top: 24px;
+    right: 95px;
+  }
+
+  .wish__bag {
+    position: relative;
+    left: 119px;
+  }
+
+  .desktop__navigation__lower ul {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+  }
+
+  .desktop__navigation__lower li,
+  .sticky__navigation__lower li {
+    font-size: 16px;
+  }
+}

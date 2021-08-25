@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koibird</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- sticky navigation -->
+      <div class="sticky__navigation__wrapper">
+      <header class="sticky__navigation">
+        <nav class="sticky__navigation__upper">
+        <img class="sticky__logo" src="./images/logo-small.svg" alt="stickylogo" />
+          <div class="sticky__wish__bag">
+            <img id="sticky__wish" src="./images/wishlist.svg" alt="" />
+            <img id="sticky__bag" src="./images/shopping.svg" alt="" />
+          </div>
+        </nav>
+      </header>
+      <nav class="sticky__navigation__lower">
+        <ul>
+          <li><a href="#" id="category">Shop by category</a></li>
+          <li><a href="#" id="brand">Shop by brand</a></li>
+          <li><a href="#" id="collection">Shop by collection</a></li>
+          <li><a href="#" id="about">About koibird</a></li>
+          <li><a href="#" id="pop">Pop-up shop</a></li>
+        </ul>
+      </nav>
+    </div>
+      <!-- end of sticky nav -->
+
+      <!-- side menu bar -->
+      <header>
+        <nav class="side__menu">
+          <div class="search__box">
+            <img class="search" src="./images/search.svg" alt="" />
+            <input class="search__input" type="text" />
+
+          </div>
+          <nav class="navigation__mobile__lower">
+            <ul>
+            <div class="show__menu">
+              <li><a href="#">Shop by category</a></li>
+              <li><a href="#">Shop by brand</a></li>
+              <li><a href="#">Shop by collection</a></li>
+            </div>
+              <li><a href="#">About koibird</a></li>
+              <li><a href="#">Pop-up shop</a></li>
+            </ul>
+          </nav>
+          <ul class="register__myaccount__wish__cart">
+            <li><a href="#">Register</a></li>
+            <li><a href="#">My Account</a></li>
+            <img id="mobile__wish"src="./images/wishlist.svg" alt="" />
+            <img id="mobile__bag"src="./images/shopping.svg" alt="" />
+          </ul>
+        </nav>
+      </header>
+      <!-- desktop navigation bar -->
+      <header class="header__desktop">
+        <div class="desktop__search__box">
+          <img class="desktop__search" src="./images/search.svg" alt="" />
+          <input class="desktop__search__input" type="text" />
+          <img
+            class="desktop__search__line"
+            src="./images/search-line.svg"
+            alt=""/>
+        </div>
+        <a href="/"><img class="desktop__logo" src="./images/logo.svg" alt="" /></a>
+        <ul class="desktop__register__myaccount__wish__cart">
+          <div class="register__myaccount">
+            <li><a href="#">Register</a></li>
+            <li><a href="#" class="middle">|</a></li>
+            <li><a href="#">My Account</a></li>
+          </div>
+          <div class="wish__bag">
+            <img id="desktop__wish" src="./images/wishlist.svg" alt="" />
+            <img id="desktop__bag" src="./images/shopping.svg" alt="" />
+          </div>
+        </ul>
+      </header>
+      <nav class="desktop__navigation__lower">
+        <ul>
+          <li><a href="#" id="category">Shop by category</a></li>
+          <li><a href="#" id="brand">Shop by brand</a></li>
+          <li><a href="#" id="collection">Shop by collection</a></li>
+          <li><a href="#" id="about">About koibird</a></li>
+          <li><a href="#" id="pop">Pop-up shop</a></li>
+        </ul>
+      </nav>
+      <!-- inner menu -->
+      <div class="nav__inner__menu">
+        <!-- left box -->
+        <div class="left__inner">
+          <ul>
+            <li class="inner__item">ANNAKIKI</li><br>
+            <li class="inner__item">ANNE WEST</li><br>
+            <li class="inner__item">BACON CLOTHING</li><br>
+            <li class="inner__item">BLACK CROWS</li><br>
+            <li class="inner__item">BLANCHA</li><br>
+            <li class="inner__item">CANCELLATO</li><br>
+            <li class="inner__item">CORDOVA</li><br>
+            <li class="inner__item">FUSALP</li><br>
+            <li class="inner__item">I LOVE MR MITTENS</li><br>
+            <li class="inner__item">IENKI IENKI</li><br>
+          </ul>
+        </div>
+        <!-- right box -->
+        <div class="right__inner">
+          <ul>
+            <li class="inner__item">LE KILT</li><br>
+            <li class="inner__item">LINGUA FRANCA</li><br>
+            <li class="inner__item">MORPHO AND LUNA</li><br>
+            <li class="inner__item">NASTAHA ZINKO</li><br>
+            <li class="inner__item">PERFECT MOMENT</li><br>
+            <li class="inner__item">SPENCER VLADIMIR</li><br>
+            <li class="inner__item">STAND</li><br>
+            <li class="inner__item">WILD AND WOOLLY</li><br>
+            <li class="inner__item">WOOLY BOOLY</li><br>
+            <li class="inner__item">BLACK CROWS</li><br>
+          </ul>
+        </div>
+        </div>
+       <!-- mobile nav bar -->
+       <!-- shift wrapper: move to left when hamburger is clicked -->
+        <div class="shift__wrapper">
+        <div class="navigation">
+          <a href="/"><img class="mobile__logo" src="./images/logo-small.svg" alt="" /></a>
+          <img class="hamburger" src="./images/hamburger.svg" alt="" />
+        </div>
+      <img src="./images/mobile.jpg" alt="" class="mobile__banner" />
+      <div class="banner__wrapper">
+        <div class="banner"></div>
+        <div class="banner__text"></div>
+        <div class="banner__yellow"></div>
+        <div class="banner__lower__text">Beauty and the piste</div>
+        <div class="banner__play"></div>
+      </div>
+      <div class="shopping__wrapper">
+        <div class="shopping__text">What we are shopping now</div>
+      </div>
+      <!-- new slider -->
+      <div class="slider__new">
+        <div class="slider__new__left"></div>
+        <div class="slider__new__text">New in</div>
+        <div class="slider__new__right"></div>
+      </div>
+      <!-- jacket section -->
+      <div class="jacket__wrapper">
+        <img class="jacket__question" id="jacket__left" src="./images/question.svg" alt="" />
+
+        <div class="jacket">
+          <div class="jacket__image" id="jacket__black"></div>
+          <div
+            class="jacket__question__grey"
+            id="jacket__question__black"
+          ></div>
+          <div class="jacket__black__description">
+            <div class="jacket__color">Black Jacket</div>
+            <div class="jacket__brand">Gucci</div>
+            <div class="jacket__price">£000</div>
+            <div class="jacket__shop">Shop now</div>
+            <div class="jacket__line"></div>
+          </div>
+        </div>
+
+        <div class="jacket">
+          <div class="jacket__image" id="jacket__white"></div>
+          <div
+            class="jacket__question__grey"
+            id="jacket__question__white"
+          ></div>
+          <div class="jacket__white__description">
+            <div class="jacket__color">White Jacket</div>
+            <div class="jacket__brand">Bacon Clothing</div>
+            <div class="jacket__price">£000</div>
+            <div class="jacket__shop">Shop now</div>
+            <div class="jacket__line"></div>
+          </div>
+        </div>
+
+        <div class="jacket">
+          <div class="jacket__image" id="jacket__yellow"></div>
+          <div
+            class="jacket__question__grey"
+            id="jacket__question__yellow"
+          ></div>
+          <div class="jacket__yellow__description">
+            <div class="jacket__color">Yellow Jacket</div>
+            <div class="jacket__brand">Annakiki</div>
+            <div class="jacket__price">£000</div>
+            <div class="jacket__shop">Shop now</div>
+            <div class="jacket__line"></div>
+          </div>
+        </div>
+
+        <div class="jacket">
+          <div class="jacket__image" id="jacket__camo"></div>
+          <div class="jacket__question__grey" id="jacket__question__camo"></div>
+          <div class="jacket__camo__description">
+            <div class="jacket__color">Camouflage Jacket</div>
+            <div class="jacket__brand">Black Crows</div>
+            <div class="jacket__price">£000</div>
+            <div class="jacket__shop">Shop now</div>
+            <div class="jacket__line"></div>
+          </div>
+        </div>
+        <img
+          class="jacket__question"
+          id="jacket__right"
+          src="./images/question.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- end of shift wrapper -->
+    <!-- category section -->
+      <div class="categories__wrapper">
+        <div class="category" id="category__outerwear">
+          <h1>OUTERWEAR</h1>
+          <div class="category__shop">SHOP NOW</div>
+          <div class="category__question"></div>
+          <div class="category__line"></div>
+        </div>
+
+        <div class="category" id="category__ski">
+          <h1>SKIS</h1>
+          <div class="category__shop">SHOP NOW</div>
+          <div class="category__question"></div>
+          <div class="category__line"></div>
+        </div>
+
+        <div class="category" id="category__knitwear">
+          <h1>KNITWEAR</h1>
+          <div class="category__shop">SHOP NOW</div>
+          <div class="category__question"></div>
+          <div class="category__line"></div>
+        </div>
+
+        <div class="category" id="category__accessories">
+          <h1>ACCESSORIES</h1>
+          <div class="category__shop">SHOP NOW</div>
+          <div class="category__question"></div>
+          <div class="category__line"></div>
+        </div>
+
+        <div class="category" id="category__goggles">
+          <h1>GOGGLES</h1>
+          <div class="category__shop">SHOP NOW</div>
+          <div class="category__question"></div>
+          <div class="category__line"></div>
+        </div>
+
+        <div class="category" id="category__jackets">
+          <h1>JACKETS</h1>
+          <div class="category__shop">SHOP NOW</div>
+          <div class="category__question"></div>
+          <div class="category__line"></div>
+        </div>
+      </div>
+      <!-- slider best -->
+      <div class="slider__best">
+        <div class="slider__best__left"></div>
+        <div class="slider__best__text">Best Sellers</div>
+        <div class="slider__best__right"></div>
+      </div>
+
+      <!-- best sellers section-->
+      <div class="best__seller__wrapper">
+        <img
+          class="best__seller__question"
+          id="best__question__left"
+          src="./images/question.svg"
+          alt=""
+        />
+
+        <div class="best__seller">
+          <div class="best__seller__image" id="best__jacket"></div>
+          <div
+            class="best__seller__question__grey"
+            id="best__seller__question__jacket"
+          ></div>
+          <div class="best__seller__jacket__description">
+            <div class="best__seller__color">Pink Jacket</div>
+            <div class="best__seller__brand">Gucci</div>
+            <div class="best__seller__price">£000</div>
+            <div class="best__seller__shop">Shop now</div>
+            <div class="best__seller__line"></div>
+          </div>
+        </div>
+
+        <div class="best__seller">
+          <div class="best__seller__image" id="best__beanie"></div>
+          <div
+            class="best__seller__question__grey"
+            id="best__seller__question__beanie"
+          ></div>
+          <div class="best__seller__beanie__description">
+            <div class="best__seller__color">Pink Knit Beanie</div>
+            <div class="best__seller__brand">Bacon Clothing</div>
+            <div class="best__seller__price">£000</div>
+            <div class="best__seller__shop">Shop now</div>
+            <div class="best__seller__line"></div>
+          </div>
+        </div>
+
+        <div class="best__seller">
+          <div class="best__seller__image" id="best__gloves"></div>
+          <div
+            class="best__seller__question__grey"
+            id="best__seller__question__gloves"
+          ></div>
+          <div class="best__seller__gloves__description">
+            <div class="best__seller__color">Gold Gloves</div>
+            <div class="best__seller__brand">Annakiki</div>
+            <div class="best__seller__price">£000</div>
+            <div class="best__seller__shop">Shop now</div>
+            <div class="best__seller__line"></div>
+          </div>
+        </div>
+
+        <div class="best__seller">
+          <div class="best__seller__image" id="best__handbag"></div>
+          <div
+            class="best__seller__question__grey"
+            id="best__seller__question__handbag"
+          ></div>
+          <div class="best__seller__handbag__description">
+            <div class="best__seller__color">Cream Handbag</div>
+            <div class="best__seller__brand">Black Crows</div>
+            <div class="best__seller__price">£000</div>
+            <div class="best__seller__shop">Shop now</div>
+            <div class="best__seller__line"></div>
+          </div>
+        </div>
+        <img
+          class="best__seller__question"
+          id="best__question___right"
+          src="./images/question.svg"
+          alt=""
+        />
+      </div>
+      
+      <!-- koiski section -->
+      <div class="koiski__wrapper">
+        <!-- box one -->
+        <div class="koiski__box__one">
+          <div class="koiski__image" id="koiski__one">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+
+          <div class="koiski__image" id="koiski__two">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+
+          <div class="koiski__image" id="koiski__three">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+        </div>
+        <!-- box two -->
+        <div class="koiski__box__two">
+          <div class="koiski__image" id="koiski__four">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+
+          <div class="koiski__image" id="koiski__five">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+
+          <div class="koiski__image" id="koiski__six">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+        </div>
+        <!-- koiski middle text -->
+        <div class="koiski__text__wrapper">
+            <div class="koiski__text">#KOISKI</div>
+        </div>
+        <!-- box three -->
+        <div class="koiski__box__three">
+          <div class="koiski__image" id="koiski__seven">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+
+          <div class="koiski__image" id="koiski__eight">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+
+          <div class="koiski__image" id="koiski__nine">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+        </div>
+        <!-- box four -->
+        <div class="koiski__box__four">
+          <div class="koiski__image" id="koiski__ten">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+
+          <div class="koiski__image" id="koiski__eleven">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+
+          <div class="koiski__image" id="koiski__twelve">
+            <div class="koiski__show">
+              <h6 id="koiski__upper">?</h6>
+              <h4 class="koiski__show-text">SHOP THE LOOK</h4>
+              <h6 id="koiski__bottom">?</h6>
+              <p class="koiski__line"></p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div class="footer__wrapper">
+         <!-- footer left section -->
+        <div class="footer__left">
+          <div class="footer__left__logo"></div>
+          <div class="footer__left__links">
+            <span>ABOUT TERMS & CONDITIONS PRIVACY POLICY CONTACT US</span>
+          </div>
+        </div>
+        <!-- footer right section -->
+          <form action="/">
+            <div class="footer__right">
+              <div class="footer__right__signup">
+                SIGN UP FOR OUR NEWSLETTER
+              </div>
+              <input class="footer__right__input" type="email"  required />
+              <label class="checkbox" for="box__id">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="checkbox__input"
+                  id="box__id"/>
+              <div class="footer__right__checkbox"></div>
+              <span class="footer__gdpr"
+                >GDPR tick box GDPR tick box GDPR tick box GDPR tick box GDPR
+                tick box</span>
+              <button class="footer__submit" type="submit">
+                SUBMIT >
+              </button>
+            </div>
+          </form>
+      </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+

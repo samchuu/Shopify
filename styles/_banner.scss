@@ -1,0 +1,143 @@
+.mobile__banner {
+  width: 100%;
+  animation: 2s bannerDelay;
+}
+
+@keyframes bannerDelay {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.banner__wrapper {
+  display: none;
+}
+
+.shopping__wrapper {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+  background-color: $green;
+}
+
+.shopping__text {
+  text-transform: uppercase;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+@media (min-width: $desktop) {
+  .mobile__banner {
+    display: none;
+  }
+  .banner__wrapper {
+    position: relative;
+    display: block;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 930px;
+    background: url(../images/bannerwhole@2x.jpg);
+  }
+
+  .banner__text {
+    width: 765px;
+    height: 125px;
+    position: absolute;
+    left: 948px;
+    bottom: 592px;
+    background: url(../images/koitext.svg);
+  }
+  .banner__yellow {
+    background: url(../images/koibird-yellow.svg);
+    width: 765px;
+    height: 130px;
+    position: absolute;
+    animation: 1s yellowBorderDelay;
+    left: 948px;
+    bottom: 592px;
+  }
+  @keyframes yellowBorderDelay {
+    from {
+      left: 948px;
+      opacity: 0;
+    }
+    to {
+      left: 948px;
+      opacity: 1;
+    }
+  }
+
+  .banner__lower__text {
+    width: 765px;
+    height: 125px;
+    position: relative;
+    text-transform: uppercase;
+    left: 1475px;
+    bottom: 412px;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    color: white;
+    animation: 2s lowerTextDelay;
+  }
+
+  @keyframes lowerTextDelay {
+    from {
+      left: 1405px;
+      opacity: 0;
+    }
+    to {
+      left: 1475px;
+      opacity: 1;
+    }
+  }
+
+  .banner__play {
+    background: url(../images/play.svg);
+    background-repeat: no-repeat;
+    width: 765px;
+    height: 125px;
+    position: absolute;
+    left: 1691px;
+    bottom: 412px;
+    animation: 1s playDelay;
+  }
+
+  @keyframes playDelay {
+    from {
+      left: 1691px;
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    to {
+      left: 1691px;
+      opacity: 1;
+    }
+  }
+  .shopping__wrapper {
+    height: 112px;
+    position: relative;
+    bottom: 127px;
+  }
+
+  .shopping__text {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 10px;
+  }
+}

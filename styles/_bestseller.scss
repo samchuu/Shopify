@@ -1,0 +1,302 @@
+.slider__best {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 40px;
+}
+.slider__best__text {
+  text-transform: uppercase;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  padding: 0 1rem;
+  width: 270px;
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+}
+.slider__best__left,
+.slider__best__right {
+  background-color: $green;
+  height: 5px;
+  width: 100%;
+}
+
+/* best seller */
+#best__jacket {
+  background: url(../images/pink-jacket.png);
+  width: 215px;
+  height: 367px;
+  margin: 30px auto;
+}
+
+#best__beanie {
+  background: url(../images/pink-beanie.png);
+  width: 195px;
+  height: 293px;
+  margin: 10px auto;
+}
+
+#best__gloves {
+  background: url(../images/gold-gloves.png);
+  width: 245px;
+  height: 368px;
+  margin: 10px auto;
+}
+
+#best__handbag {
+  background: url(../images/cream-handbag.png);
+  width: 195px;
+  height: 293px;
+  margin: 5px auto;
+}
+
+.best__seller__wrapper {
+  width: 90%;
+  max-width: 335px;
+  margin: 5rem auto;
+}
+.best__seller {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.best__seller__brand {
+  color: #999999;
+  text-transform: initial;
+}
+
+.best__seller__color,
+.best__seller__price,
+.best__seller__brand,
+.best__seller__shop {
+  margin-top: 5px;
+}
+
+.best__seller__question {
+  display: none;
+}
+
+.best__seller__line {
+  width: 75px;
+  height: 2px;
+  background-color: $green;
+  margin: 5px auto;
+}
+
+@media (min-width: $tablet) {
+  .slider__best__text {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    width: 409px;
+    position: relative;
+  }
+
+  .slider__best__left {
+    width: 100%;
+    max-width: 881px;
+    position: relative;
+    right: 18px;
+  }
+  .slider__best__right {
+    width: 100%;
+    max-width: 881px;
+    position: relative;
+    left: 14px;
+  }
+
+  /* best seller */
+
+  .best__seller__wrapper {
+    max-width: 650px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .best__seller {
+    font-size: 14px;
+    position: relative;
+    left: 15px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px;
+  }
+
+  #best__jacket {
+    position: relative;
+  }
+
+  #best__beanie {
+    position: relative;
+    right: 85px;
+    top: 59px;
+  }
+
+  #best__gloves {
+    position: relative;
+  }
+
+  #best__handbag {
+    position: relative;
+    right: 80px;
+    top: 37px;
+    margin: 0px auto;
+  }
+  .best__seller__beanie__description {
+    position: relative;
+    top: 110px;
+    right: 85px;
+  }
+  .best__seller__handbag__description {
+    position: relative;
+    top: 85px;
+    right: 80px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider__best {
+    position: relative;
+    top: 107px;
+  }
+  .slider__best__text {
+    text-transform: uppercase;
+    /* border: 1px solid black; */
+    font-size: 22px;
+    letter-spacing: 2px;
+    width: 509px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    right: 4px;
+  }
+
+  .slider__best__left {
+    position: relative;
+    right: 17px;
+  }
+  .slider__best__right {
+    position: relative;
+    left: 7px;
+  }
+
+  .best__seller__wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 67px;
+  }
+  .best__seller {
+    font-size: 16px;
+  }
+  .best__seller__question {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+    top: 184px;
+    left: 40px;
+    z-index: 9999;
+  }
+
+  #best__question__left {
+    position: relative;
+    left: 21px;
+  }
+  #best__question___right {
+    position: relative;
+    left: -7px;
+  }
+
+  #best__jacket {
+    position: relative;
+    right: 77px;
+    margin: 0px auto;
+  }
+
+  #best__beanie {
+    position: relative;
+    right: 23px;
+    top: 39px;
+    margin: 0px auto;
+  }
+
+  #best__gloves {
+    position: relative;
+    left: 15px;
+    bottom: 3px;
+    margin: 0px auto;
+  }
+
+  #best__handbag {
+    position: relative;
+    left: 51px;
+    top: 37px;
+    margin: 0px auto;
+  }
+
+  .best__seller__beanie__description {
+    position: relative;
+    right: 24px;
+    top: 85px;
+  }
+
+  .best__seller__jacket__description {
+    position: relative;
+    right: 78px;
+    top: 11px;
+  }
+
+  .best__seller__gloves__description {
+    position: relative;
+    right: -14px;
+    bottom: -10px;
+  }
+
+  .best__seller__handbag__description {
+    position: relative;
+    left: 53px;
+    top: 85px;
+  }
+
+  .best__seller__question__grey {
+    display: block;
+    background: no-repeat url(../images/mini-question-grey.svg);
+
+    width: 20px;
+    height: 20px;
+  }
+
+  #best__seller__question__jacket {
+    position: absolute;
+    right: 15px;
+    bottom: 125px;
+  }
+
+  #best__seller__question__beanie {
+    position: absolute;
+    right: -48px;
+    bottom: 125px;
+  }
+
+  #best__seller__question__gloves {
+    position: absolute;
+    right: -62px;
+    bottom: 125px;
+  }
+
+  #best__seller__question__handbag {
+    background: url(../images/mini-question-green.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: -123px;
+    bottom: 125px;
+  }
+}
