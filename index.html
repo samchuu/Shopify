@@ -43,12 +43,17 @@
           <nav class="navigation__mobile__lower">
             <ul>
             <div class="show__menu">
-              <li><a href="#">Shop by category</a></li>
-              <li><a href="#">Shop by brand</a></li>
-              <li><a href="#">Shop by collection</a></li>
+              <ul>
+                <li><a href="#">Shop by category</a></li>
+                <li><a href="#">Shop by brand</a></li>
+                <li><a href="#">Shop by collection</a></li>
+              </ul>
+            
             </div>
+            <ul>
               <li><a href="#">About koibird</a></li>
               <li><a href="#">Pop-up shop</a></li>
+            </ul>
             </ul>
           </nav>
           <ul class="register__myaccount__wish__cart">
@@ -486,7 +491,8 @@
               <div class="footer__right__signup">
                 SIGN UP FOR OUR NEWSLETTER
               </div>
-              <input class="footer__right__input" type="email"  required />
+              <label for="email"></label>
+              <input class="footer__right__input" type="email" id="email" required />
               <label class="checkbox" for="box__id">
                 <input
                   type="checkbox"
