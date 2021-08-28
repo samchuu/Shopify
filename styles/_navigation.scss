@@ -6,6 +6,17 @@
 #mobile__bag {
   display: none;
 }
+// hide information visually but keep them available to screen reader and other assistive technology
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 a {
   text-decoration: none;
   color: black;

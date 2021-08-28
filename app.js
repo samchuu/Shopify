@@ -17,12 +17,14 @@ window.addEventListener("scroll", () => {
 
 // when browser scroll height reaches a certain point, animation takes place
 function animation() {
+  // mobile scroll
   if (window.innerWidth < 875) {
     categoryWrapper.classList.toggle("categories__show", window.scrollY > 1242);
     koiskiWrapper.classList.toggle("koiski__wrapper__show",window.scrollY > 5750);
+  // tablet scroll
   } else if (window.innerWidth < 1366) {
     categoryWrapper.classList.toggle("categories__show", window.scrollY > 942);
-    koiskiWrapper.style.display = "flex";
+  // desktop scroll
   } else if (window.innerWidth > 1367) {
     categoryWrapper.classList.toggle("categories__show", window.scrollY > 1260);
     koiskiWrapper.classList.toggle("koiski__wrapper__show", window.scrollY > 3081);
@@ -63,8 +65,8 @@ for (let small of smallImages) {
   small.addEventListener(
     "mouseover",
     () => {
-      const answer = small.firstElementChild;
-      answer.style.display = "block";
+      const koiskiShow = small.firstElementChild;
+      koiskiShow.style.display = "block";
     },
     false
   );
@@ -74,8 +76,8 @@ for (let small of smallImages) {
   small.addEventListener(
     "mouseout",
     () => {
-      const answer = small.firstElementChild;
-      answer.style.display = "none";
+      const koiskiShow = small.firstElementChild;
+      koiskiShow.style.display = "none";
     },
     false
   );
